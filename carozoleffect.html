@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="carozoleffect.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        .container-img{
+            width: 70vh;
+            height: 50rem;
+            border-radius: 1rem;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            background-image: url("box1_image.jpg");
+            background-size: cover;
+            animation: gallary 15s linear infinite;
+            animation-direction: alternate-reverse;
+
+        }
+        @keyframes gallary{
+            0%{
+                background-image: url("box1_image.jpg");
+            }
+            50%{
+                background-image: url("box4_image.jpg");
+            }
+            100%{
+                background-image: url("box5_image.jpg");
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-img"></div>
+</body>
+</html>
